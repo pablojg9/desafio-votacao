@@ -79,7 +79,7 @@ class AgendaResourceTest {
   void shouldRequestInsertOpenSessionAgendaWithSuccess() {
     try {
       doNothing().when(insertOpenSessionAgendaInputPort).insert(uuid, timeMinutes);
-      mockMvc.perform(post("/api/v1/agendas/insert/{agendaId}", uuid, timeMinutes)
+      mockMvc.perform(post("/api/v1/agendas/{agendaId}", uuid, timeMinutes)
               .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().is2xxSuccessful());
     } catch (Exception e) {
