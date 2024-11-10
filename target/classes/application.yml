@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Voting
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
