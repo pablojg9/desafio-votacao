@@ -66,7 +66,6 @@ O projeto utiliza DTOs para requisições e respostas, facilitando a transferên
 2. **Iniciar uma nova votação de acordo com o tempo solicitado**
 
 - **POST /api/v1/agendas/{uuid}**
-    - Autentica um usuário e retorna um token JWT.
     - Exemplo do Endpoint:
        ````
          http://localhost:8080/api/v1/agendas/df3ff974-f6cc-48c0-adc9-f9c38c2dcf03
